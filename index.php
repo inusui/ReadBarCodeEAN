@@ -12,6 +12,8 @@
     
 <?php
 echo"<div id=camera></div>";
+echo"<div id=resultado></div>";
+
 
 ?>
 
@@ -40,7 +42,7 @@ echo"<div id=camera></div>";
   Quagga.onDetected(function(data){
 
     console.log(data);
-    //document.getElementById("data").innerHTML = codeResult.toString();
+    document.querySelector('#resultado').innerText = data.codeResult.code;
   
   }
   
